@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 # Функция обработки команд /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     logger.info("Приветственное сообщение отправлено.")
-    await update.message.reply_text("Бот запущен! Отправьте сообщение, и оно будет переслано владельцу.")
+    await update.message.reply_text("Бот запущен! Отправьте сообщение, и админ ответит в ближайшее время.")
 
 # Функция пересылки сообщений владельцу
 async def forward_to_owner(update: Update, context: ContextTypes.DEFAULT_TYPE):
