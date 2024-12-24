@@ -1,10 +1,15 @@
 import logging
+import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-# Введите ваш токен бота и ID владельца
-BOT_TOKEN = "7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY"
-OWNER_ID = 6537256835  # Замените на ваш реальный Telegram ID
+# Загружаем переменные из .env файла
+load_dotenv()
+
+# Чтение токена и ID владельца из переменных окружения
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+OWNER_ID = int(os.getenv("OWNER_ID"))
 
 # Настройка логирования
 logging.basicConfig(
