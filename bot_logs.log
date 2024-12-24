@@ -1,0 +1,430 @@
+2024-12-24 13:22:27,281 - DEBUG - Using proactor: IocpProactor
+2024-12-24 13:22:27,353 - DEBUG - Calling Bot API endpoint `getMe` with parameters `{}`
+2024-12-24 13:22:27,360 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-12-24 13:22:27,419 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D9938C1C10>
+2024-12-24 13:22:27,420 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D993842FD0> server_hostname='api.telegram.org' timeout=5.0
+2024-12-24 13:22:27,493 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D992BA4FE0>
+2024-12-24 13:22:27,495 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:27,496 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:27,496 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:27,497 - DEBUG - send_request_body.complete
+2024-12-24 13:22:27,497 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:27,584 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'252'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:27,586 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getMe "HTTP/1.1 200 OK"
+2024-12-24 13:22:27,586 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:27,587 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:27,588 - DEBUG - response_closed.started
+2024-12-24 13:22:27,588 - DEBUG - response_closed.complete
+2024-12-24 13:22:27,589 - DEBUG - Call to Bot API endpoint `getMe` finished with return value `{'id': 7484521706, 'is_bot': True, 'first_name': 'Admin', 'username': 'History_Admin_bot', 'can_join_groups': True, 'can_read_all_group_messages': False, 'supports_inline_queries': False, 'can_connect_to_business': False, 'has_main_web_app': False}`
+2024-12-24 13:22:27,589 - DEBUG - This Bot is already initialized.
+2024-12-24 13:22:27,590 - DEBUG - Updater started (polling)
+2024-12-24 13:22:27,590 - DEBUG - Start network loop retry bootstrap del webhook
+2024-12-24 13:22:27,590 - DEBUG - Deleting webhook
+2024-12-24 13:22:27,590 - DEBUG - Calling Bot API endpoint `deleteWebhook` with parameters `{}`
+2024-12-24 13:22:27,590 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:27,591 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:27,591 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:27,591 - DEBUG - send_request_body.complete
+2024-12-24 13:22:27,591 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:27,645 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:27 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'68'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:27,646 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/deleteWebhook "HTTP/1.1 200 OK"
+2024-12-24 13:22:27,646 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:27,646 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:27,646 - DEBUG - response_closed.started
+2024-12-24 13:22:27,647 - DEBUG - response_closed.complete
+2024-12-24 13:22:27,647 - DEBUG - Call to Bot API endpoint `deleteWebhook` finished with return value `True`
+2024-12-24 13:22:27,647 - DEBUG - Bootstrap done
+2024-12-24 13:22:27,648 - DEBUG - Waiting for polling to start
+2024-12-24 13:22:27,648 - DEBUG - Polling updates from Telegram started
+2024-12-24 13:22:27,648 - DEBUG - Start network loop retry getting Updates
+2024-12-24 13:22:27,649 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 0}`
+2024-12-24 13:22:27,651 - INFO - Application started
+2024-12-24 13:22:27,651 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-12-24 13:22:27,716 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D9938C11F0>
+2024-12-24 13:22:27,716 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D993843450> server_hostname='api.telegram.org' timeout=5.0
+2024-12-24 13:22:27,787 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D990B77980>
+2024-12-24 13:22:27,788 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:27,789 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:27,789 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:27,790 - DEBUG - send_request_body.complete
+2024-12-24 13:22:27,791 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:37,852 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:37 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:37,853 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:22:37,853 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:37,854 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:37,854 - DEBUG - response_closed.started
+2024-12-24 13:22:37,854 - DEBUG - response_closed.complete
+2024-12-24 13:22:37,855 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:22:37,855 - DEBUG - No new updates found.
+2024-12-24 13:22:37,856 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 0}`
+2024-12-24 13:22:37,857 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:37,858 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:37,859 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:37,860 - DEBUG - send_request_body.complete
+2024-12-24 13:22:37,860 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:38,632 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:38 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'253'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:38,633 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:22:38,634 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:38,634 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:38,635 - DEBUG - response_closed.started
+2024-12-24 13:22:38,635 - DEBUG - response_closed.complete
+2024-12-24 13:22:38,636 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[{'update_id': 766177186, 'message': {'message_id': 98, 'from': {'id': 7763595514, 'is_bot': False, 'first_name': '7837', 'language_code': 'ru'}, 'chat': {'id': 7763595514, 'first_name': '7837', 'type': 'private'}, 'date': 1735035758, 'text': 'Jrjdidj'}}]`
+2024-12-24 13:22:38,636 - DEBUG - Getting updates: [766177186]
+2024-12-24 13:22:38,637 - DEBUG - Processing update Update(message=Message(channel_chat_created=False, chat=Chat(first_name='7837', id=7763595514, type=<ChatType.PRIVATE>), date=datetime.datetime(2024, 12, 24, 10, 22, 38, tzinfo=datetime.timezone.utc), delete_chat_photo=False, from_user=User(first_name='7837', id=7763595514, is_bot=False, language_code='ru'), group_chat_created=False, message_id=98, supergroup_chat_created=False, text='Jrjdidj'), update_id=766177186)
+2024-12-24 13:22:38,640 - INFO - Получено сообщение от 7837 (ID: 7763595514): Jrjdidj
+2024-12-24 13:22:38,640 - DEBUG - Calling Bot API endpoint `sendMessage` with parameters `{'chat_id': 6537256835, 'text': 'Сообщение от 7837 (ID: 7763595514):\n\nJrjdidj'}`
+2024-12-24 13:22:38,642 - DEBUG - close.started
+2024-12-24 13:22:38,643 - DEBUG - close.complete
+2024-12-24 13:22:38,643 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-12-24 13:22:38,645 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177187}`
+2024-12-24 13:22:38,647 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:38,648 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:38,649 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:38,650 - DEBUG - send_request_body.complete
+2024-12-24 13:22:38,651 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:38,711 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D993933110>
+2024-12-24 13:22:38,711 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D993842FD0> server_hostname='api.telegram.org' timeout=5.0
+2024-12-24 13:22:38,779 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D993932FC0>
+2024-12-24 13:22:38,780 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:38,781 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:38,782 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:38,783 - DEBUG - send_request_body.complete
+2024-12-24 13:22:38,783 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:38,920 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:38 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'342'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:38,922 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/sendMessage "HTTP/1.1 200 OK"
+2024-12-24 13:22:38,922 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:38,922 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:38,923 - DEBUG - response_closed.started
+2024-12-24 13:22:38,923 - DEBUG - response_closed.complete
+2024-12-24 13:22:38,924 - DEBUG - Call to Bot API endpoint `sendMessage` finished with return value `{'message_id': 99, 'from': {'id': 7484521706, 'is_bot': True, 'first_name': 'Admin', 'username': 'History_Admin_bot'}, 'chat': {'id': 6537256835, 'first_name': 'Alexey', 'username': 'Help36', 'type': 'private'}, 'date': 1735035758, 'text': 'Сообщение от 7837 (ID: 7763595514):\n\nJrjdidj'}`
+2024-12-24 13:22:38,925 - DEBUG - Calling Bot API endpoint `sendMessage` with parameters `{'chat_id': 7763595514, 'text': 'Ваше сообщение передано владельцу. Ожидайте ответа.'}`
+2024-12-24 13:22:38,927 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:38,928 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:38,929 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:38,930 - DEBUG - send_request_body.complete
+2024-12-24 13:22:38,931 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:39,073 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:39 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'491'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:39,073 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/sendMessage "HTTP/1.1 200 OK"
+2024-12-24 13:22:39,073 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:39,073 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:39,073 - DEBUG - response_closed.started
+2024-12-24 13:22:39,074 - DEBUG - response_closed.complete
+2024-12-24 13:22:39,074 - DEBUG - Call to Bot API endpoint `sendMessage` finished with return value `{'message_id': 100, 'from': {'id': 7484521706, 'is_bot': True, 'first_name': 'Admin', 'username': 'History_Admin_bot'}, 'chat': {'id': 7763595514, 'first_name': '7837', 'type': 'private'}, 'date': 1735035759, 'text': 'Ваше сообщение передано владельцу. Ожидайте ответа.'}`
+2024-12-24 13:22:48,712 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:48 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:48,712 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:22:48,713 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:48,713 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:48,714 - DEBUG - response_closed.started
+2024-12-24 13:22:48,714 - DEBUG - response_closed.complete
+2024-12-24 13:22:48,714 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:22:48,715 - DEBUG - No new updates found.
+2024-12-24 13:22:48,715 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177187}`
+2024-12-24 13:22:48,717 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:48,718 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:48,718 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:48,719 - DEBUG - send_request_body.complete
+2024-12-24 13:22:48,719 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:49,694 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:49 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'410'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:49,694 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:22:49,694 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:49,694 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:49,695 - DEBUG - response_closed.started
+2024-12-24 13:22:49,695 - DEBUG - response_closed.complete
+2024-12-24 13:22:49,695 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[{'update_id': 766177187, 'message': {'message_id': 101, 'from': {'id': 6537256835, 'is_bot': False, 'first_name': 'Alexey', 'username': 'Help36', 'language_code': 'ru'}, 'chat': {'id': 6537256835, 'first_name': 'Alexey', 'username': 'Help36', 'type': 'private'}, 'date': 1735035769, 'text': '7763595514 ваывавыа', 'entities': [{'offset': 0, 'length': 10, 'type': 'phone_number'}]}}]`
+2024-12-24 13:22:49,695 - DEBUG - Getting updates: [766177187]
+2024-12-24 13:22:49,695 - DEBUG - Processing update Update(message=Message(channel_chat_created=False, chat=Chat(first_name='Alexey', id=6537256835, type=<ChatType.PRIVATE>, username='Help36'), date=datetime.datetime(2024, 12, 24, 10, 22, 49, tzinfo=datetime.timezone.utc), delete_chat_photo=False, entities=(MessageEntity(length=10, offset=0, type=<MessageEntityType.PHONE_NUMBER>),), from_user=User(first_name='Alexey', id=6537256835, is_bot=False, language_code='ru', username='Help36'), group_chat_created=False, message_id=101, supergroup_chat_created=False, text='7763595514 ваывавыа'), update_id=766177187)
+2024-12-24 13:22:49,696 - INFO - Получено сообщение от Alexey (ID: 6537256835): 7763595514 ваывавыа
+2024-12-24 13:22:49,696 - DEBUG - Calling Bot API endpoint `sendMessage` with parameters `{'chat_id': 6537256835, 'text': 'Сообщение от Alexey (ID: 6537256835):\n\n7763595514 ваывавыа'}`
+2024-12-24 13:22:49,696 - DEBUG - close.started
+2024-12-24 13:22:49,696 - DEBUG - close.complete
+2024-12-24 13:22:49,697 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-12-24 13:22:49,697 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:22:49,697 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:49,698 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:49,698 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:49,699 - DEBUG - send_request_body.complete
+2024-12-24 13:22:49,699 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:49,756 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D9939E8A10>
+2024-12-24 13:22:49,756 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D993842FD0> server_hostname='api.telegram.org' timeout=5.0
+2024-12-24 13:22:49,813 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D993933620>
+2024-12-24 13:22:49,813 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:49,814 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:49,814 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:49,814 - DEBUG - send_request_body.complete
+2024-12-24 13:22:49,814 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:49,910 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:49 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'397'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:49,910 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/sendMessage "HTTP/1.1 200 OK"
+2024-12-24 13:22:49,910 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:49,910 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:49,910 - DEBUG - response_closed.started
+2024-12-24 13:22:49,910 - DEBUG - response_closed.complete
+2024-12-24 13:22:49,911 - DEBUG - Call to Bot API endpoint `sendMessage` finished with return value `{'message_id': 102, 'from': {'id': 7484521706, 'is_bot': True, 'first_name': 'Admin', 'username': 'History_Admin_bot'}, 'chat': {'id': 6537256835, 'first_name': 'Alexey', 'username': 'Help36', 'type': 'private'}, 'date': 1735035769, 'text': 'Сообщение от Alexey (ID: 6537256835):\n\n7763595514 ваывавыа'}`
+2024-12-24 13:22:49,911 - DEBUG - Calling Bot API endpoint `sendMessage` with parameters `{'chat_id': 6537256835, 'text': 'Ваше сообщение передано владельцу. Ожидайте ответа.'}`
+2024-12-24 13:22:49,911 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:49,912 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:49,912 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:49,912 - DEBUG - send_request_body.complete
+2024-12-24 13:22:49,912 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:49,988 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:49 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'513'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:49,988 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/sendMessage "HTTP/1.1 200 OK"
+2024-12-24 13:22:49,988 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:49,988 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:49,988 - DEBUG - response_closed.started
+2024-12-24 13:22:49,988 - DEBUG - response_closed.complete
+2024-12-24 13:22:49,989 - DEBUG - Call to Bot API endpoint `sendMessage` finished with return value `{'message_id': 103, 'from': {'id': 7484521706, 'is_bot': True, 'first_name': 'Admin', 'username': 'History_Admin_bot'}, 'chat': {'id': 6537256835, 'first_name': 'Alexey', 'username': 'Help36', 'type': 'private'}, 'date': 1735035769, 'text': 'Ваше сообщение передано владельцу. Ожидайте ответа.'}`
+2024-12-24 13:22:59,766 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:22:59 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:22:59,767 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:22:59,768 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:22:59,768 - DEBUG - receive_response_body.complete
+2024-12-24 13:22:59,769 - DEBUG - response_closed.started
+2024-12-24 13:22:59,769 - DEBUG - response_closed.complete
+2024-12-24 13:22:59,770 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:22:59,770 - DEBUG - No new updates found.
+2024-12-24 13:22:59,770 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:22:59,771 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:22:59,771 - DEBUG - send_request_headers.complete
+2024-12-24 13:22:59,771 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:22:59,772 - DEBUG - send_request_body.complete
+2024-12-24 13:22:59,772 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:09,833 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:23:09 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:23:09,833 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:23:09,833 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:23:09,833 - DEBUG - receive_response_body.complete
+2024-12-24 13:23:09,833 - DEBUG - response_closed.started
+2024-12-24 13:23:09,833 - DEBUG - response_closed.complete
+2024-12-24 13:23:09,833 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:23:09,834 - DEBUG - No new updates found.
+2024-12-24 13:23:09,834 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:23:09,834 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:09,834 - DEBUG - send_request_headers.complete
+2024-12-24 13:23:09,834 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:23:09,835 - DEBUG - send_request_body.complete
+2024-12-24 13:23:09,835 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:19,903 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:23:19 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:23:19,904 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:23:19,904 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:23:19,905 - DEBUG - receive_response_body.complete
+2024-12-24 13:23:19,905 - DEBUG - response_closed.started
+2024-12-24 13:23:19,905 - DEBUG - response_closed.complete
+2024-12-24 13:23:19,906 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:23:19,906 - DEBUG - No new updates found.
+2024-12-24 13:23:19,907 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:23:19,908 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:19,908 - DEBUG - send_request_headers.complete
+2024-12-24 13:23:19,908 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:23:19,908 - DEBUG - send_request_body.complete
+2024-12-24 13:23:19,908 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:29,971 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:23:29 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:23:29,972 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:23:29,972 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:23:29,972 - DEBUG - receive_response_body.complete
+2024-12-24 13:23:29,973 - DEBUG - response_closed.started
+2024-12-24 13:23:29,973 - DEBUG - response_closed.complete
+2024-12-24 13:23:29,974 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:23:29,974 - DEBUG - No new updates found.
+2024-12-24 13:23:29,975 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:23:29,975 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:29,975 - DEBUG - send_request_headers.complete
+2024-12-24 13:23:29,975 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:23:29,976 - DEBUG - send_request_body.complete
+2024-12-24 13:23:29,976 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:40,039 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:23:40 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:23:40,040 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:23:40,040 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:23:40,040 - DEBUG - receive_response_body.complete
+2024-12-24 13:23:40,041 - DEBUG - response_closed.started
+2024-12-24 13:23:40,041 - DEBUG - response_closed.complete
+2024-12-24 13:23:40,042 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:23:40,042 - DEBUG - No new updates found.
+2024-12-24 13:23:40,043 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:23:40,043 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:40,043 - DEBUG - send_request_headers.complete
+2024-12-24 13:23:40,043 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:23:40,044 - DEBUG - send_request_body.complete
+2024-12-24 13:23:40,044 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:50,111 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:23:50 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:23:50,111 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:23:50,111 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:23:50,111 - DEBUG - receive_response_body.complete
+2024-12-24 13:23:50,111 - DEBUG - response_closed.started
+2024-12-24 13:23:50,111 - DEBUG - response_closed.complete
+2024-12-24 13:23:50,111 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:23:50,111 - DEBUG - No new updates found.
+2024-12-24 13:23:50,112 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:23:50,112 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:23:50,113 - DEBUG - send_request_headers.complete
+2024-12-24 13:23:50,113 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:23:50,113 - DEBUG - send_request_body.complete
+2024-12-24 13:23:50,113 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:00,175 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:24:00 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:24:00,175 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:24:00,176 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:24:00,176 - DEBUG - receive_response_body.complete
+2024-12-24 13:24:00,176 - DEBUG - response_closed.started
+2024-12-24 13:24:00,176 - DEBUG - response_closed.complete
+2024-12-24 13:24:00,177 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:24:00,177 - DEBUG - No new updates found.
+2024-12-24 13:24:00,177 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:24:00,178 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:00,179 - DEBUG - send_request_headers.complete
+2024-12-24 13:24:00,179 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:24:00,179 - DEBUG - send_request_body.complete
+2024-12-24 13:24:00,179 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:10,242 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:24:10 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:24:10,243 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:24:10,243 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:24:10,244 - DEBUG - receive_response_body.complete
+2024-12-24 13:24:10,244 - DEBUG - response_closed.started
+2024-12-24 13:24:10,244 - DEBUG - response_closed.complete
+2024-12-24 13:24:10,245 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:24:10,245 - DEBUG - No new updates found.
+2024-12-24 13:24:10,246 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:24:10,246 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:10,247 - DEBUG - send_request_headers.complete
+2024-12-24 13:24:10,247 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:24:10,247 - DEBUG - send_request_body.complete
+2024-12-24 13:24:10,247 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:20,309 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:24:20 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:24:20,310 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:24:20,310 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:24:20,311 - DEBUG - receive_response_body.complete
+2024-12-24 13:24:20,311 - DEBUG - response_closed.started
+2024-12-24 13:24:20,311 - DEBUG - response_closed.complete
+2024-12-24 13:24:20,312 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:24:20,312 - DEBUG - No new updates found.
+2024-12-24 13:24:20,313 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:24:20,314 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:20,314 - DEBUG - send_request_headers.complete
+2024-12-24 13:24:20,314 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:24:20,314 - DEBUG - send_request_body.complete
+2024-12-24 13:24:20,314 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:30,376 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:24:30 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:24:30,376 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:24:30,377 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:24:30,377 - DEBUG - receive_response_body.complete
+2024-12-24 13:24:30,377 - DEBUG - response_closed.started
+2024-12-24 13:24:30,377 - DEBUG - response_closed.complete
+2024-12-24 13:24:30,378 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:24:30,378 - DEBUG - No new updates found.
+2024-12-24 13:24:30,378 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:24:30,379 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:30,379 - DEBUG - send_request_headers.complete
+2024-12-24 13:24:30,380 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:24:30,380 - DEBUG - send_request_body.complete
+2024-12-24 13:24:30,380 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:40,441 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:24:40 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:24:40,442 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:24:40,442 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:24:40,443 - DEBUG - receive_response_body.complete
+2024-12-24 13:24:40,443 - DEBUG - response_closed.started
+2024-12-24 13:24:40,443 - DEBUG - response_closed.complete
+2024-12-24 13:24:40,444 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:24:40,444 - DEBUG - No new updates found.
+2024-12-24 13:24:40,445 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:24:40,445 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:40,445 - DEBUG - send_request_headers.complete
+2024-12-24 13:24:40,446 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:24:40,446 - DEBUG - send_request_body.complete
+2024-12-24 13:24:40,446 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:50,509 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:24:50 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:24:50,510 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:24:50,511 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:24:50,511 - DEBUG - receive_response_body.complete
+2024-12-24 13:24:50,512 - DEBUG - response_closed.started
+2024-12-24 13:24:50,512 - DEBUG - response_closed.complete
+2024-12-24 13:24:50,513 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:24:50,513 - DEBUG - No new updates found.
+2024-12-24 13:24:50,514 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:24:50,516 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:24:50,517 - DEBUG - send_request_headers.complete
+2024-12-24 13:24:50,517 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:24:50,518 - DEBUG - send_request_body.complete
+2024-12-24 13:24:50,518 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:00,581 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:25:00 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:25:00,581 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:25:00,581 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:25:00,581 - DEBUG - receive_response_body.complete
+2024-12-24 13:25:00,581 - DEBUG - response_closed.started
+2024-12-24 13:25:00,582 - DEBUG - response_closed.complete
+2024-12-24 13:25:00,582 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:25:00,582 - DEBUG - No new updates found.
+2024-12-24 13:25:00,582 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:25:00,582 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:00,583 - DEBUG - send_request_headers.complete
+2024-12-24 13:25:00,583 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:25:00,583 - DEBUG - send_request_body.complete
+2024-12-24 13:25:00,583 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:10,644 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:25:10 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:25:10,645 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:25:10,645 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:25:10,645 - DEBUG - receive_response_body.complete
+2024-12-24 13:25:10,645 - DEBUG - response_closed.started
+2024-12-24 13:25:10,645 - DEBUG - response_closed.complete
+2024-12-24 13:25:10,646 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:25:10,646 - DEBUG - No new updates found.
+2024-12-24 13:25:10,646 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:25:10,647 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:10,648 - DEBUG - send_request_headers.complete
+2024-12-24 13:25:10,648 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:25:10,648 - DEBUG - send_request_body.complete
+2024-12-24 13:25:10,648 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:20,710 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:25:20 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:25:20,711 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:25:20,711 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:25:20,712 - DEBUG - receive_response_body.complete
+2024-12-24 13:25:20,712 - DEBUG - response_closed.started
+2024-12-24 13:25:20,712 - DEBUG - response_closed.complete
+2024-12-24 13:25:20,713 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:25:20,713 - DEBUG - No new updates found.
+2024-12-24 13:25:20,714 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:25:20,715 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:20,716 - DEBUG - send_request_headers.complete
+2024-12-24 13:25:20,717 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:25:20,717 - DEBUG - send_request_body.complete
+2024-12-24 13:25:20,718 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:30,780 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:25:30 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:25:30,781 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:25:30,781 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:25:30,781 - DEBUG - receive_response_body.complete
+2024-12-24 13:25:30,781 - DEBUG - response_closed.started
+2024-12-24 13:25:30,782 - DEBUG - response_closed.complete
+2024-12-24 13:25:30,782 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:25:30,782 - DEBUG - No new updates found.
+2024-12-24 13:25:30,783 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:25:30,784 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:30,785 - DEBUG - send_request_headers.complete
+2024-12-24 13:25:30,785 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:25:30,786 - DEBUG - send_request_body.complete
+2024-12-24 13:25:30,786 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:40,865 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Server', b'nginx/1.18.0'), (b'Date', b'Tue, 24 Dec 2024 10:25:40 GMT'), (b'Content-Type', b'application/json'), (b'Content-Length', b'23'), (b'Connection', b'keep-alive'), (b'Strict-Transport-Security', b'max-age=31536000; includeSubDomains; preload'), (b'Access-Control-Allow-Origin', b'*'), (b'Access-Control-Allow-Methods', b'GET, POST, OPTIONS'), (b'Access-Control-Expose-Headers', b'Content-Length,Content-Type,Date,Server,Connection')])
+2024-12-24 13:25:40,866 - INFO - HTTP Request: POST https://api.telegram.org/bot7484521706:AAHHPCaV3l4MDE0GyXZXWSOrQ3dSioJSSLY/getUpdates "HTTP/1.1 200 OK"
+2024-12-24 13:25:40,867 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-12-24 13:25:40,867 - DEBUG - receive_response_body.complete
+2024-12-24 13:25:40,867 - DEBUG - response_closed.started
+2024-12-24 13:25:40,868 - DEBUG - response_closed.complete
+2024-12-24 13:25:40,868 - DEBUG - Call to Bot API endpoint `getUpdates` finished with return value `[]`
+2024-12-24 13:25:40,869 - DEBUG - No new updates found.
+2024-12-24 13:25:40,869 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 10, 'offset': 766177188}`
+2024-12-24 13:25:40,871 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:40,872 - DEBUG - send_request_headers.complete
+2024-12-24 13:25:40,872 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:25:40,873 - DEBUG - send_request_body.complete
+2024-12-24 13:25:40,873 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:42,362 - DEBUG - Application received stop signal. Shutting down.
+2024-12-24 13:25:42,362 - DEBUG - Stopping Updater
+2024-12-24 13:25:42,362 - DEBUG - Waiting background polling task to finish up.
+2024-12-24 13:25:42,362 - DEBUG - Network loop retry getting Updates was cancelled
+2024-12-24 13:25:42,363 - DEBUG - receive_response_headers.failed exception=CancelledError()
+2024-12-24 13:25:42,363 - DEBUG - response_closed.started
+2024-12-24 13:25:42,363 - DEBUG - Calling `get_updates` one more time to mark all fetched updates as read.
+2024-12-24 13:25:42,363 - DEBUG - Calling Bot API endpoint `getUpdates` with parameters `{'timeout': 0, 'offset': 766177188}`
+2024-12-24 13:25:42,363 - DEBUG - response_closed.complete
+2024-12-24 13:25:42,364 - DEBUG - connect_tcp.started host='api.telegram.org' port=443 local_address=None timeout=5.0 socket_options=None
+2024-12-24 13:25:42,430 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D993932F00>
+2024-12-24 13:25:42,430 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001D993843450> server_hostname='api.telegram.org' timeout=5.0
+2024-12-24 13:25:42,495 - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001D9939EBDD0>
+2024-12-24 13:25:42,495 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-12-24 13:25:42,496 - DEBUG - send_request_headers.complete
+2024-12-24 13:25:42,496 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-12-24 13:25:42,496 - DEBUG - send_request_body.complete
+2024-12-24 13:25:42,496 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
